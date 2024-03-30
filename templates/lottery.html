@@ -1,0 +1,28 @@
+<style>
+  ul {
+    display: flex;
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: yellow;
+    border: 2px solid darkgoldenrod;
+    font-weight: 800;
+    padding: 12px 16px;
+    width: 20px;
+    text-align: center;
+    font-size: larger;
+    margin: 0 2px;
+  }
+</style>
+
+<h1>樂透號碼</h1>
+
+<h3>本期號碼</h3>
+<ul>
+  {% for number in lottery_numbers %}
+  <li>{{ number }}</li>
+  {% endfor %}
+</ul>
